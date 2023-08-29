@@ -6,8 +6,7 @@ export interface ButtonProps {
 }
 
 const Button: React.FC<ButtonProps> = props => {
-  console.log(props);
-
-  return <span className="button-wrap">我是一个按钮啊</span>;
+  const { size } = props;
+  return <span className="button-wrap">我是一个按钮啊 - {size}</span>;
 };
 export default Button;
