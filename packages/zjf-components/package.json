@@ -4,7 +4,7 @@
   "type": "module",
   "main": "./dist/build.js",
   "module": "./dist/build.js",
-  "types": "./dist/index.d.ts",
+  "types": "./dist/dist/index.d.ts",
   "private": false,
   "exports": {
     ".": {
@@ -13,12 +13,10 @@
     },
     "./style": "./dist/style.css"
   },
-  "files": [
-    "dist"
-  ],
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
+    "build:watch": "tsc && vite build --w",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
   },
