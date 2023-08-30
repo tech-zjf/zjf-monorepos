@@ -5,12 +5,13 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "pnpm --filter zjf-test dev",
-    "dev:com": "pnpm --filter zjf-react-ui dev",
-    "build": "pnpm --filter zjf-react-ui build",
-    "build:watch": "pnpm --filter zjf-react-ui build:watch",
-    "link": "pnpm --filter zjf-react-ui run link",
-    "publish": "pnpm --filter zjf-react-ui publish --no-git-checks",
+    "dev:test": "pnpm --filter zjf-test dev",
+    "dev:admin": "pnpm --filter zjf-admin dev",
+    "dev:ui": "pnpm --filter zjf-react-ui dev",
+    "build:ui": "pnpm --filter zjf-react-ui build",
+    "build:ui:watch": "pnpm --filter zjf-react-ui build:watch",
+    "link:ui": "pnpm --filter zjf-react-ui run link",
+    "publish:ui": "pnpm --filter zjf-react-ui publish --no-git-checks",
     "lint": "eslint --ext .js,.jsx,.ts,.tsx --fix --quiet ./"
   },
   "keywords": [
